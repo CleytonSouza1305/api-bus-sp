@@ -1,9 +1,7 @@
 {
-  "dependencies": {
-    "cors": "^2.8.5",
-    "dotevn": "^0.0.1-security",
-    "express": "^5.2.1"
-  },
+  "name": "bus-api",
+  "version": "1.0.0",
+  "main": "index.js",
   "devDependencies": {
     "@types/cors": "^2.8.19",
     "@types/express": "^5.0.6",
@@ -11,5 +9,19 @@
     "ts-node": "^10.9.2",
     "tsx": "^4.21.0",
     "typescript": "^5.9.3"
+  },
+  "scripts": {
+    "dev": "tsx watch ./src/server.ts",
+    "build": "tsc",
+    "start": "node ./build/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotevn": "^0.0.1-security",
+    "express": "^5.2.1"
   }
 }
